@@ -58,7 +58,6 @@ int main() {
 	int n;
 	int i = 0;
 	int* arr;
-	int* sorted;
 
 	scanf("%d", &n);
 	if (n < 1 || 1000000 < n) {
@@ -66,8 +65,8 @@ int main() {
 		printf("1 이상 1000000 이하 범위로 입력하세요.\n");
 		return 0;
 	}
+
 	arr = (int*)malloc(sizeof(int) * n);
-	sorted = (int*)malloc(sizeof(int) * n);
 
 	for (i = 0; i < n; i++) {
 		scanf("%d", &arr[i]);
